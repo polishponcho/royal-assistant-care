@@ -5,10 +5,10 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 
 // core components
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import CustomInput from "components/CustomInput/CustomInput.js";
-import Button from "components/CustomButtons/Button.js";
+// import GridContainer from "components/Grid/GridContainer.js";
+// import GridItem from "components/Grid/GridItem.js";
+// import CustomInput from "components/CustomInput/CustomInput.js";
+// import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
@@ -18,11 +18,18 @@ export default function WorkSection() {
   const classes = useStyles();
   return (
     <div className={classes.section}>
-      <GridContainer justify="center">
+      <h2 className={classes.title}>Work with us</h2>
+      <h4 className={classes.description}>
+        Send Royal Assistant a message if you would like to setup an
+        appointment.
+      </h4>
+      <h3 className={classes.description}>royalassistantcare@gmail.com</h3>
+      {/* <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Work with us</h2>
           <h4 className={classes.description}>
-            Send Royal Assistant a message if you would like to setup an appointment.
+            Send Royal Assistant a message if you would like to setup an
+            appointment.
           </h4>
           <form>
             <GridContainer>
@@ -31,7 +38,7 @@ export default function WorkSection() {
                   labelText="Your Name"
                   id="name"
                   formControlProps={{
-                    fullWidth: true
+                    fullWidth: true,
                   }}
                 />
               </GridItem>
@@ -40,7 +47,7 @@ export default function WorkSection() {
                   labelText="Your Email"
                   id="email"
                   formControlProps={{
-                    fullWidth: true
+                    fullWidth: true,
                   }}
                 />
               </GridItem>
@@ -49,11 +56,11 @@ export default function WorkSection() {
                 id="message"
                 formControlProps={{
                   fullWidth: true,
-                  className: classes.textArea
+                  className: classes.textArea,
                 }}
                 inputProps={{
                   multiline: true,
-                  rows: 5
+                  rows: 5,
                 }}
               />
               <GridItem xs={12} sm={12} md={4}>
@@ -62,7 +69,7 @@ export default function WorkSection() {
             </GridContainer>
           </form>
         </GridItem>
-      </GridContainer>
+      </GridContainer> */}
     </div>
   );
 }

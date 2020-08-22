@@ -3,23 +3,16 @@ import React from "react";
 import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import LocationOn from "@material-ui/icons/LocationOn";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
-
-import caregiverDay from "assets/img/caregiver-day.jpeg"
-import homeHealthCare from "assets/img/HomeHealth.jpeg"
-import HomeHealth from "assets/img/homeHealthCare.jpeg"
-import FatherandSons from "assets/img/FatherandSons.jpeg"
-import homeHealthCare2 from "assets/img/homeHealthCare2.jpeg"
-
+import caregiverDay from "assets/img/caregiver-day.jpeg";
+// import homeHealthCare from "assets/img/HomeHealth.jpeg";
+// import HomeHealth from "assets/img/homeHealthCare.jpeg";
+import FatherandSons from "assets/img/FatherandSons.jpeg";
+import homeHealthCare2 from "assets/img/homeHealthCare2.jpeg";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.js";
 
@@ -33,7 +26,7 @@ export default function SectionCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false
+    autoplay: false,
   };
   return (
     <div className={classes.section}>
@@ -43,10 +36,12 @@ export default function SectionCarousel() {
             <Card carousel>
               <Carousel {...settings}>
                 <div>
-                  <img src={caregiverDay} alt="First slide" className="slick-image" />
-                  <div className="slick-caption">
-             
-                  </div>
+                  <img
+                    src={caregiverDay}
+                    alt="First slide"
+                    className="slick-image"
+                  />
+                  <div className="slick-caption"></div>
                 </div>
                 <div>
                   <img
@@ -54,15 +49,15 @@ export default function SectionCarousel() {
                     alt="Second slide"
                     className="slick-image"
                   />
-                  <div className="slick-caption">
-                  
-                  </div>
+                  <div className="slick-caption"></div>
                 </div>
                 <div>
-                  <img src={homeHealthCare2} alt="Third slide" className="slick-image" />
-                  <div className="slick-caption">
-                    
-                  </div>
+                  <img
+                    src={homeHealthCare2}
+                    alt="Third slide"
+                    className="slick-image"
+                  />
+                  <div className="slick-caption"></div>
                 </div>
               </Carousel>
             </Card>
